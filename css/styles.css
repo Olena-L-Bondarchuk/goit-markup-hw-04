@@ -121,28 +121,27 @@ img {
   padding: 32px 0;
 }
 
+.contacts-tel,
 .contacts-mail {
-  color: inherit;
+  color: var(--primary-text-color);
   font-weight: 500;
   line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+.contacts-tel:hover,
+.contacts-tel:focus,
 .contacts-mail:focus,
 .contacts-mail:hover {
   color: var(--accent-color);
 }
 
-.contacts-tel {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02;
+.header-icon {
+  fill: currentColor;
 }
-.contacts-tel:hover,
-.contacts-tel:focus {
-  color: var(--accent-color);
-}
-
 /* Main studio*/
 
 /* Загальна настройка заголовків */
@@ -228,6 +227,22 @@ img {
   line-height: calc(24 / 14);
 }
 
+.preference-icon {
+  --color1: #212121;
+}
+.preference-gen-icon {
+  width: 270px;
+  height: 120px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
 /* Examples section */
 .about {
   padding-top: 0;
@@ -268,7 +283,66 @@ img {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
+  margin-bottom: 16px;
 }
+
+/* Socials in section Team */
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-bgc);
+  color: #afb1b8;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+
+.socials-icon {
+  fill: currentColor;
+}
+
+/* Section Regular-custumers */
+.customers-area {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.regular-customers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.customers-icon {
+  fill: #afb1b8;
+}
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: var(--accent-color);
+}
+
 /* Main Portfolio*/
 
 .visually-hidden {
