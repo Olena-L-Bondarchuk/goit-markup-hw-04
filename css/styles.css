@@ -155,10 +155,17 @@ img {
 
 /* Hero */
 .section-hero {
-  background-color: var(--secondary-bgc);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  background-color: rgba(47, 48, 58, 0.4);
+  background-image: url(../images/studia/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -307,7 +314,9 @@ img {
 }
 
 .socials-link:hover,
-.socials-link:focus {
+.socials-link:focus,
+.socials-link-footer:hover,
+.socials-link-footer:focus {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
 }
@@ -414,7 +423,11 @@ img {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
 }
-
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-list-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
@@ -431,6 +444,12 @@ img {
   padding-bottom: 60px;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 70px;
+}
 .logo-footer {
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
@@ -473,4 +492,27 @@ img {
 .contacts-footer-tel:hover,
 .contacts-footer-tel:focus {
   color: var(--accent-color);
+}
+
+.join-list {
+  display: flex;
+  gap: 10px;
+}
+
+.join {
+  font-weight: 700;
+  font-size: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  margin-bottom: 20px;
+}
+.socials-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--secondary-text-color);
 }
