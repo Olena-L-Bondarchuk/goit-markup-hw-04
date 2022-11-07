@@ -13,8 +13,7 @@
   --filters-bgc: #eeeeee;
 
   /* Color to icons */
-  --primary-icon: background: rgba(175, 177, 184, 1);
-;
+  --primary-icon: #afb1b8;
 }
 
 /* 
@@ -334,7 +333,7 @@ img {
 .customers-area {
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   color: var(--primary-icon);
   display: flex;
